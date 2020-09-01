@@ -1,0 +1,5 @@
+Tutorial and Explanation of what word2vec is:
+https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469
+Tutorial on implementing word2vec with limited RAM using gensim:
+https://rare-technologies.com/word2vec-tutorial/
+

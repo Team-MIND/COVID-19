@@ -1,0 +1,102 @@
+Link to Twint github:
+https://github.com/twintproject/twint
+
+easy installation did not work for me.
+use the git installation to make sure you install all necessary dependencies.
+
+git clone https://github.com/twintproject/twint.git
+cd twint
+pip3 install . -r requirements.txt
+
+Twint Functionality:
+TWINT - An Advanced Twitter Scraping Tool.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u USERNAME, --username USERNAME
+                        User's Tweets you want to scrape.
+  -s SEARCH, --search SEARCH
+                        Search for Tweets containing this word or phrase.
+  -g GEO, --geo GEO     Search for geocoded Tweets.
+  --near NEAR           Near a specified city.
+  --location            Show user's location (Experimental).
+  -l LANG, --lang LANG  Search for Tweets in a specific language.
+  -o OUTPUT, --output OUTPUT
+                        Save output to a file.
+  -es ELASTICSEARCH, --elasticsearch ELASTICSEARCH
+                        Index to Elasticsearch.
+  --year YEAR           Filter Tweets before specified year.
+  --since DATE          Filter Tweets sent since date (Example: "2017-12-27 20:30:15" or 2017-12-27).
+  --until DATE          Filter Tweets sent until date (Example: "2017-12-27 20:30:15" or 2017-12-27).
+  --email               Filter Tweets that might have email addresses
+  --phone               Filter Tweets that might have phone numbers
+  --verified            Display Tweets only from verified users (Use with -s).
+  --csv                 Write as .csv file.
+  --json                Write as .json file
+  --hashtags            Output hashtags in seperate column.
+  --cashtags            Output cashtags in seperate column.
+  --userid USERID       Twitter user id.
+  --limit LIMIT         Number of Tweets to pull (Increments of 20).
+  --count               Display number of Tweets scraped at the end of session.
+  --stats               Show number of replies, retweets, and likes.
+  -db DATABASE, --database DATABASE
+                        Store Tweets in a sqlite3 database.
+  --to USERNAME         Search Tweets to a user.
+  --all USERNAME        Search all Tweets associated with a user.
+  --followers           Scrape a person's followers.
+  --following           Scrape a person's follows
+  --favorites           Scrape Tweets a user has liked.
+  --proxy-type PROXY_TYPE
+                        Socks5, HTTP, etc.
+  --proxy-host PROXY_HOST
+                        Proxy hostname or IP.
+  --proxy-port PROXY_PORT
+                        The port of the proxy server.
+  --essid [ESSID]       Elasticsearch Session ID, use this to differentiate scraping sessions.
+  --userlist USERLIST   Userlist from list or file.
+  --retweets            Include user's Retweets (Warning: limited).
+  --format FORMAT       Custom output format (See wiki for details).
+  --user-full           Collect all user information (Use with followers or following only).
+  --profile-full        Slow, but effective method of collecting a user's Tweets and RT.
+  --translate           Get tweets translated by Google Translate.
+  --translate-dest TRANSLATE_DEST
+                        Translate tweet to language (ISO2).
+  --store-pandas STORE_PANDAS
+                        Save Tweets in a DataFrame (Pandas) file.
+  --pandas-type [PANDAS_TYPE]
+                        Specify HDF5 or Pickle (HDF5 as default)
+  -it [INDEX_TWEETS], --index-tweets [INDEX_TWEETS]
+                        Custom Elasticsearch Index name for Tweets.
+  -if [INDEX_FOLLOW], --index-follow [INDEX_FOLLOW]
+                        Custom Elasticsearch Index name for Follows.
+  -iu [INDEX_USERS], --index-users [INDEX_USERS]
+                        Custom Elasticsearch Index name for Users.
+  --debug               Store information in debug logs
+  --resume TWEET_ID     Resume from Tweet ID.
+  --videos              Display only Tweets with videos.
+  --images              Display only Tweets with images.
+  --media               Display Tweets with only images or videos.
+  --replies             Display replies to a subject.
+  -pc PANDAS_CLEAN, --pandas-clean PANDAS_CLEAN
+                        Automatically clean Pandas dataframe at every scrape.
+  -cq CUSTOM_QUERY, --custom-query CUSTOM_QUERY
+                        Custom search query.
+  -pt, --popular-tweets
+                        Scrape popular tweets instead of recent ones.
+  -sc, --skip-certs     Skip certs verification, useful for SSC.
+  -ho, --hide-output    Hide output, no tweets will be displayed.
+  -nr, --native-retweets
+                        Filter the results for retweets only.
+  --min-likes MIN_LIKES
+                        Filter the tweets by minimum number of likes.
+  --min-retweets MIN_RETWEETS
+                        Filter the tweets by minimum number of retweets.
+  --min-replies MIN_REPLIES
+                        Filter the tweets by minimum number of replies.
+  --links LINKS         Include or exclude tweets containing one o more links. If not specified you will get both
+                        tweets that might contain links or not.
+  --source SOURCE       Filter the tweets for specific source client.
+  --members-list MEMBERS_LIST
+                        Filter the tweets sent by users in a given list.
+  -fr, --filter-retweets
+                        Exclude retweets from the results.
